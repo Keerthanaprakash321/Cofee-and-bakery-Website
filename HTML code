@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee & Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Coffee & Bakery</h2>
+            <ul id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Fresh Coffee, Warm Pastries</h1>
+            <p>Your perfect place to relax and enjoy handcrafted flavors.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- MENU FILTER SECTION -->
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterMenu('all')">All</button>
+            <button class="filter-btn" onclick="filterMenu('coffee')">Coffee</button>
+            <button class="filter-btn" onclick="filterMenu('bakery')">Bakery</button>
+            <button class="filter-btn" onclick="filterMenu('drinks')">Drinks</button>
+        </div>
+
+        <div class="menu-items">
+
+            <div class="item coffee">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Espresso</h3>
+                <p>₹120</p>
+            </div>
+
+            <div class="item bakery">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Blueberry Muffin</h3>
+                <p>₹90</p>
+            </div>
+
+            <div class="item drinks">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Lemon Iced Tea</h3>
+                <p>₹150</p>
+            </div>
+
+            <div class="item coffee">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Cappuccino</h3>
+                <p>₹160</p>
+            </div>
+
+            <div class="item bakery">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Chocolate Croissant</h3>
+                <p>₹110</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery-section">
+        <h2>Our Place</h2>
+
+        <div class="gallery-grid">
+            <img src="https://via.placeholder.com/300" alt="">
+            <img src="https://via.placeholder.com/300" alt="">
+            <img src="https://via.placeholder.com/300" alt="">
+            <img src="https://via.placeholder.com/300" alt="">
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="contact-section">
+        <h2>Book a Table</h2>
+
+        <form id="bookingForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="number" id="people" placeholder="No. of People" required min="1">
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <p id="msg"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
